@@ -16,7 +16,7 @@ Varsha scored 85 marks in SQL.
 A database is an organized collection of related data that can be easily stored, managed, and accessed.
 
 ## What is DBMS?
-DBMS (Database Management System) is software used to create, store, update, manipulate and retrieve data.
+DBMS (Database Management System) is software used to create, store, update, manipulateand retrieve data.
 
 Examples:
 - MySQL

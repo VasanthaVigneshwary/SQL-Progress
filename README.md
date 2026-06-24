@@ -43,3 +43,26 @@ My 100-Day SQL Learning Journey.
 ### Upcoming
 
 - ⏳ Day 04 - Foreign Key, Composite Key and Relationships
+# SQL Progress
+
+My 100-Day SQL Learning Journey.
+
+## Goals
+
+- Learn SQL from basics to advanced concepts
+- Practice SQL daily
+- Build Data Analyst skills
+- Maintain a GitHub commit streak
+
+## Progress
+
+### Completed
+
+- ✅ Day 01 - Database, DBMS and RDBMS Fundamentals
+- ✅ Day 02 - Tables, Rows, Columns, Records and Schema
+- ✅ Day 03 - Primary Key, Candidate Key and Alternate Key
+- ✅ Day 04 - Foreign Key, Composite Key and Relationships
+
+### Upcoming
+
+- ⏳ Day 05 - MySQL Installation, Workbench and Database Connection
