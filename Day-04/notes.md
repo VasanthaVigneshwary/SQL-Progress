@@ -1,41 +1,102 @@
--- Day 4 SQL Learning
+# Day 4 - Foreign Key, Composite Key and Relationships
 
--- Foreign Key:
--- A column that refers to the Primary Key of another table.
--- Used to connect tables.
+## Why Do We Need Relationships?
 
--- Example:
--- Departments Table
--- DeptID | DeptName
--- D01    | AI&DS
--- D02    | CSE
+Relationships help connect tables and reduce duplicate data.
 
--- Students Table
--- StudentID | Name   | DeptID
--- 101       | Varsha | D01
--- 102       | Rahul  | D02
+Instead of storing the same information repeatedly,
+databases connect related tables using keys.
 
--- Here DeptID in Students Table is a Foreign Key.
+## What is a Foreign Key?
 
--- Composite Key:
--- A key formed using two or more columns together.
+A Foreign Key is a column in one table that refers to the Primary Key of another table.
 
--- Example:
--- StudentID | CourseID
--- 101       | C01
--- 101       | C02
--- 102       | C01
+Purpose:
+- Connect tables
+- Maintain data consistency
+- Reduce data duplication
 
--- Composite Key:
--- StudentID + CourseID
+Example:
 
--- Relationships:
+Departments Table
 
--- One-to-One:
--- One Student ↔ One ID Card
+DeptID | DeptName
+D01    | AI&DS
+D02    | CSE
 
--- One-to-Many:
--- One Department ↔ Many Students
+Students Table
 
--- Many-to-Many:
--- Many Students ↔ Many Courses
+StudentID | Name   | DeptID
+101       | Varsha | D01
+102       | Rahul  | D02
+
+DeptID in Students Table is a Foreign Key.
+
+## Primary Key vs Foreign Key
+
+Primary Key:
+- Uniquely identifies a row
+- Cannot contain NULL values
+- Must be unique
+
+Foreign Key:
+- Connects tables
+- Can contain duplicate values
+- May contain NULL values
+
+## What is a Composite Key?
+
+A Composite Key is a key formed using two or more columns together.
+
+Example:
+
+StudentID | CourseID
+101       | C01
+101       | C02
+102       | C01
+
+Composite Key:
+StudentID + CourseID
+
+Neither column alone is unique,
+but together they uniquely identify each record.
+
+## Relationships
+
+### One-to-One (1:1)
+
+One Student ↔ One ID Card
+
+Each student has one ID card,
+and each ID card belongs to one student.
+
+### One-to-Many (1:M)
+
+One Department ↔ Many Students
+
+One department can have many students.
+
+### Many-to-Many (M:M)
+
+Students ↔ Courses
+
+One student can enroll in many courses.
+One course can have many students.
+
+## Mini Challenge
+
+Orders Table
+
+OrderID | ProductID | CustomerID
+
+Possible Primary Key:
+OrderID
+
+Possible Foreign Keys:
+ProductID
+CustomerID
+
+Possible Composite Key:
+OrderID + ProductID
+
+This combination uniquely identifies products within an order.
