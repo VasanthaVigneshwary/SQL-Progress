@@ -90,3 +90,15 @@ My 100-Day SQL Learning Journey.
 ### Upcoming
 
 - ⏳ Day 06 - CREATE DATABASE, SHOW DATABASES and DROP DATABASE
+### Completed
+
+- ✅ Day 01 - Database, DBMS and RDBMS Fundamentals
+- ✅ Day 02 - Tables, Rows, Columns, Records and Schema
+- ✅ Day 03 - Primary Key, Candidate Key and Alternate Key
+- ✅ Day 04 - Foreign Key, Composite Key and Relationships
+- ✅ Day 05 - Super Key, Unique Key, Natural Key and Surrogate Key
+- ✅ Day 06 - Introduction to SQL, SQL Categories and Basic Database Commands
+
+### Upcoming
+
+- ⏳ Day 07 - CREATE TABLE
