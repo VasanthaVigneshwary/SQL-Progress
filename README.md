@@ -129,3 +129,37 @@ My 100-Day SQL Learning Journey.
 - Viewed the table structure using `DESC`.
 
 **Status:** ✅ Completed
+# Day 8 – INSERT INTO Statement
+
+## 📚 Topics Covered
+
+- DML (Data Manipulation Language)
+- INSERT INTO Statement
+- VALUES Clause
+- Insert Single Row
+- Insert Multiple Rows
+- Insert Selected Columns
+- NULL Values
+- SELECT * Statement
+
+## 💻 Practical Work
+
+- Used the SQL_DB database
+- Inserted 5 employee records into the Office table
+- Displayed all records using SELECT *
+
+## Commands Practiced
+
+- USE
+- INSERT INTO
+- VALUES
+- SELECT
+
+## Files
+
+- notes.md
+- day08-practice.sql
+
+## Status
+
+✅ Completed
