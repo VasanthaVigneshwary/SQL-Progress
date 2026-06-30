@@ -1,6 +1,10 @@
+-- SQL 100 Days Challenge
+-- Day 07 Practice
+-- Topic: Creating Tables & SQL Data Types
+
 USE SQL_DB;
 CREATE TABLE Office (
-Employee ID INT PRIMARY KEY ,
+Employee_ID INT PRIMARY KEY ,
 Employee_Name VARCHAR (100),
 Age INT ,
 Salary DECIMAL (10,2) ,

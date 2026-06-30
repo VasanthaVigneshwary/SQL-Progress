@@ -102,3 +102,30 @@ My 100-Day SQL Learning Journey.
 ### Upcoming
 
 - ⏳ Day 07 - CREATE TABLE
+
+## ✅ Day 7 - Creating Tables & SQL Data Types
+
+**Topics Covered**
+
+- CREATE TABLE
+- SQL Data Types
+- INT
+- VARCHAR
+- CHAR
+- DATE
+- DECIMAL
+- FLOAT
+- BOOLEAN
+- PRIMARY KEY
+- SHOW TABLES
+- DESC
+
+**Practice**
+
+- Created the `Office` table.
+- Used appropriate SQL data types.
+- Defined a Primary Key.
+- Verified the table using `SHOW TABLES`.
+- Viewed the table structure using `DESC`.
+
+**Status:** ✅ Completed
