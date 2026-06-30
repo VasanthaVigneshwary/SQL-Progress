@@ -1,6 +1,6 @@
 USE SQL_DB;
 CREATE TABLE Office (
-Employee_ID INT PRIMARY KEY ,
+Employee ID INT PRIMARY KEY ,
 Employee_Name VARCHAR (100),
 Age INT ,
 Salary DECIMAL (10,2) ,
