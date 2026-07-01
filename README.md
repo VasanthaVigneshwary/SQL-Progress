@@ -163,3 +163,48 @@ My 100-Day SQL Learning Journey.
 ## Status
 
 ✅ Completed
+# Day 9 – SELECT Statement
+
+## 📚 Topics Covered
+
+- DQL (Data Query Language)
+- SELECT Statement
+- SELECT *
+- Selecting Specific Columns
+- Column Order
+- Aliases (AS)
+- Simple Calculations
+- DISTINCT
+
+---
+
+## 💻 Practical Work
+
+- Displayed all employee records
+- Displayed selected columns
+- Changed column display order
+- Used aliases for column names
+- Performed calculations inside SELECT
+- Displayed unique department names using DISTINCT
+
+---
+
+## Commands Practiced
+
+- SELECT *
+- SELECT column_name
+- AS
+- DISTINCT
+
+---
+
+## Files
+
+- notes.md
+- day09-practice.sql
+
+---
+
+## Status
+
+✅ Completed
