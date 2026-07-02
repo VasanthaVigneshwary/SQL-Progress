@@ -208,3 +208,57 @@ My 100-Day SQL Learning Journey.
 ## Status
 
 ✅ Completed
+# 🚀 SQL Day 10 – WHERE Clause
+
+## 📌 Topics Covered
+
+- WHERE Clause
+- Filtering Records
+- Comparison Operators
+- Numeric Conditions
+- Text Conditions
+- Date Conditions
+- Equality and Inequality
+- Practical Filtering Queries
+
+---
+
+## 💻 Commands Practiced
+
+```sql
+SELECT * FROM Office WHERE Employee_ID = 101;
+
+SELECT * FROM Office WHERE Age = 20;
+
+SELECT * FROM Office WHERE Salary > 40000;
+
+SELECT * FROM Office WHERE Salary <= 40000;
+
+SELECT * FROM Office WHERE Department = 'IT';
+
+SELECT * FROM Office WHERE Department <> 'IT';
+
+SELECT * FROM Office WHERE Gender = 'F';
+
+SELECT * FROM Office WHERE Joining_Date > '2026-01-01';
+
+SELECT * FROM Office WHERE Employee_Name = 'Rahul';
+
+SELECT * FROM Office WHERE Age != 20;
+```
+
+---
+
+## 📖 What I Learned
+
+- The WHERE clause filters rows based on conditions.
+- Numeric values should not be enclosed in quotes.
+- Text, CHAR, and DATE values should use single quotes.
+- SQL supports various comparison operators.
+- WHERE is commonly used with SELECT to retrieve specific records.
+
+---
+
+## 🎯 Outcome
+
+Successfully filtered employee records using different conditions in MySQL Workbench.

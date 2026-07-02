@@ -1,0 +1,22 @@
+
+USE SQL_DB;
+-- Filter by Employee ID
+SELECT * FROM OFFICE WHERE EMPLOYEE_ID = 101 ;
+-- Filter by Age
+SELECT * FROM OFFICE WHERE AGE = 20 ;
+-- Salary greater than 40000
+SELECT * FROM OFFICE WHERE SALARY > 40000 ;
+-- Salary less than or equal to 40000
+SELECT * FROM OFFICE WHERE SALARY <= 40000;
+-- Department is IT
+SELECT * FROM OFFICE WHERE DEPARTMENT = 'IT' ;
+-- Department is not IT
+SELECT * FROM OFFICE WHERE DEPARTMENT <> 'IT';
+-- Female Employees
+SELECT * FROM OFFICE WHERE GENDER = 'F';
+-- Age not equal to 20
+SELECT * FROM OFFICE WHERE AGE != 20 ;
+-- Search by Employee Name
+SELECT EMPLOYEE_NAME FROM OFFICE WHERE EMPLOYEE_NAME = 'RAHUL' ;
+-- Employees joined after 2026
+SELECT * FROM OFFICE WHERE JOINING_DATE > '2026-01-01';
