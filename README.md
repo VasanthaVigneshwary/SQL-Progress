@@ -262,3 +262,87 @@ SELECT * FROM Office WHERE Age != 20;
 ## 🎯 Outcome
 
 Successfully filtered employee records using different conditions in MySQL Workbench.
+# 🚀 SQL Day 11 – AND, OR & NOT Operators
+
+## 📌 Topics Covered
+
+- AND Operator
+- OR Operator
+- NOT Operator
+- Combining Multiple Conditions
+- Filtering Records
+- Multiple AND Conditions
+- Multiple OR Conditions
+- SQL Execution Flow
+
+---
+
+## 💻 Commands Practiced
+
+```sql
+USE SQL_DB;
+
+SELECT *
+FROM Office
+WHERE Department='IT'
+AND Gender='F';
+
+SELECT *
+FROM Office
+WHERE Department='CSE'
+AND Age=20;
+
+SELECT *
+FROM Office
+WHERE Salary>45000
+AND Department='IT';
+
+SELECT *
+FROM Office
+WHERE Department='IT'
+OR Department='AI';
+
+SELECT *
+FROM Office
+WHERE Age=19
+OR Gender='F';
+
+SELECT *
+FROM Office
+WHERE NOT Department='CSE';
+
+SELECT *
+FROM Office
+WHERE NOT Gender='M';
+
+SELECT *
+FROM Office
+WHERE Department='IT'
+AND Salary>25000
+AND Gender='F';
+
+SELECT Employee_Name, Salary
+FROM Office
+WHERE Salary>40000
+OR Age=19;
+
+SELECT Employee_Name, Department
+FROM Office
+WHERE NOT Department='IT';
+```
+
+---
+
+## 📖 What I Learned
+
+- The `AND` operator returns rows only when all conditions are true.
+- The `OR` operator returns rows when at least one condition is true.
+- The `NOT` operator excludes rows that match a condition.
+- Multiple conditions can be combined using AND and OR.
+- WHERE works together with logical operators to filter records.
+
+---
+
+## 🎯 Outcome
+
+Successfully retrieved records using logical operators (`AND`, `OR`, `NOT`) and practiced combining multiple filtering conditions in MySQL Workbench.
