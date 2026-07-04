@@ -346,3 +346,25 @@ WHERE NOT Department='IT';
 ## 🎯 Outcome
 
 Successfully retrieved records using logical operators (`AND`, `OR`, `NOT`) and practiced combining multiple filtering conditions in MySQL Workbench.
+## Day 12 – ORDER BY Clause
+
+### Topics Covered
+
+- ORDER BY
+- ASC
+- DESC
+- Sorting text
+- Sorting numbers
+- Sorting dates
+- Multiple column sorting
+- ORDER BY with WHERE
+- SQL execution order
+
+### Files
+
+- day12-practice.sql
+- notes.md
+
+### Status
+
+✅ Completed
