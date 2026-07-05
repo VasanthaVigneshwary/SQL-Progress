@@ -368,3 +368,18 @@ Successfully retrieved records using logical operators (`AND`, `OR`, `NOT`) and 
 ### Status
 
 ✅ Completed
+## 📚 SQL Learning Progress
+
+- ✅ Day 1 – Introduction to SQL
+- ✅ Day 2 – DBMS & RDBMS
+- ✅ Day 3 – MySQL Installation
+- ✅ Day 4 – MySQL Workbench
+- ✅ Day 5 – SQL Basics
+- ✅ Day 6 – SQL Commands (DDL, DML, DQL)
+- ✅ Day 7 – CREATE DATABASE & CREATE TABLE
+- ✅ Day 8 – INSERT INTO
+- ✅ Day 9 – SELECT Statement
+- ✅ Day 10 – WHERE Clause
+- ✅ Day 11 – AND, OR & NOT Operators
+- ✅ Day 12 – ORDER BY Clause
+- ✅ Day 13 – LIMIT Clause
