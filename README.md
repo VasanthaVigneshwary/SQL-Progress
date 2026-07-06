@@ -383,3 +383,24 @@ Successfully retrieved records using logical operators (`AND`, `OR`, `NOT`) and 
 - ✅ Day 11 – AND, OR & NOT Operators
 - ✅ Day 12 – ORDER BY Clause
 - ✅ Day 13 – LIMIT Clause
+## Progress
+
+...
+
+### ✅ Day 14 - Aggregate Functions
+
+Learned SQL Aggregate Functions:
+
+- COUNT()
+- SUM()
+- AVG()
+- MAX()
+- MIN()
+
+Practiced:
+- Counting rows
+- Calculating total salary
+- Finding average salary
+- Finding highest salary
+- Finding lowest salary
+- Using Aggregate Functions with WHERE
