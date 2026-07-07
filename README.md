@@ -404,3 +404,24 @@ Practiced:
 - Finding highest salary
 - Finding lowest salary
 - Using Aggregate Functions with WHERE
+### ✅ Day 15 - GROUP BY
+
+Learned SQL GROUP BY clause to group rows with the same values.
+
+Topics Covered:
+- GROUP BY
+- GROUP BY with COUNT()
+- GROUP BY with SUM()
+- GROUP BY with AVG()
+- GROUP BY with MAX()
+- GROUP BY with MIN()
+- GROUP BY with WHERE
+- GROUP BY with ORDER BY
+
+Practiced:
+- Counting employees department-wise
+- Finding average salary by department
+- Finding highest and lowest salary by department
+- Calculating total salary for each department
+- Filtering groups using WHERE
+- Sorting grouped results
