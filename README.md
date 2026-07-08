@@ -425,3 +425,43 @@ Practiced:
 - Calculating total salary for each department
 - Filtering groups using WHERE
 - Sorting grouped results
+# SQL Day 16 - HAVING Clause
+
+## 📚 Topics Covered
+
+- HAVING Clause
+- Difference between WHERE and HAVING
+- HAVING with GROUP BY
+- HAVING with COUNT()
+- HAVING with SUM()
+- HAVING with AVG()
+- HAVING with MAX()
+- HAVING with MIN()
+- Combining WHERE, GROUP BY, HAVING, ORDER BY
+- SQL Execution Order
+
+## 💻 Workbench Practice
+
+Completed all practice queries including:
+
+- Departments having more than one employee
+- Departments with average salary above 40000
+- Departments with total salary greater than 70000
+- Departments with highest salary greater than 45000
+- Departments with minimum salary above 35000
+- Female employee count by department using HAVING
+- Departments with at least two employees earning above 40000
+- Average age by department using HAVING
+
+## 🎯 Learning Outcome
+
+After completing Day 16, I can:
+
+- Understand the purpose of the HAVING clause
+- Differentiate between WHERE and HAVING
+- Filter grouped data using aggregate functions
+- Combine WHERE, GROUP BY, HAVING, ORDER BY, and Aggregate Functions
+- Understand SQL logical execution order
+
+---
+Part of my #100DaysOfSQL Challenge 🚀
