@@ -51,3 +51,55 @@ SELECT Department, AVG(Age) AS Average_Age
 FROM Office
 GROUP BY Department
 HAVING AVG(Age) >= 20;
+ 
+-- Mini Challenge Solutions
+
+-- 9. Departments having more than one employee
+SELECT Department, COUNT(*) AS Employees
+FROM Office
+GROUP BY Department
+HAVING COUNT(*) > 1;
+
+-- 10. Departments with average salary greater than 45000
+SELECT Department, AVG(Salary) AS Average_Salary
+FROM Office
+GROUP BY Department
+HAVING AVG(Salary) > 45000;
+
+-- 11. Departments with total salary greater than 80000
+SELECT Department, SUM(Salary) AS Total_Salary
+FROM Office
+GROUP BY Department
+HAVING SUM(Salary) > 80000;
+
+-- 12. Departments with highest salary equal to 50000.50
+SELECT Department, MAX(Salary) AS Highest_Salary
+FROM Office
+GROUP BY Department
+HAVING MAX(Salary) = 50000.50;
+
+-- 13. Departments with minimum salary less than 35000
+SELECT Department, MIN(Salary) AS Lowest_Salary
+FROM Office
+GROUP BY Department
+HAVING MIN(Salary) < 35000;
+
+-- 14. Male employee count by department
+SELECT Department, COUNT(*) AS Male_Employees
+FROM Office
+WHERE Gender = 'M'
+GROUP BY Department
+HAVING COUNT(*) >= 1;
+
+-- 15. Departments with employees younger than 20
+SELECT Department, COUNT(*) AS Employees_Below_20
+FROM Office
+WHERE Age < 20
+GROUP BY Department
+HAVING COUNT(*) >= 1;
+
+-- 16. Departments with average age below 20
+SELECT Department, AVG(Age) AS Average_Age
+FROM Office
+GROUP BY Department
+HAVING AVG(Age) < 20;
