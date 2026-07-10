@@ -465,3 +465,49 @@ After completing Day 16, I can:
 
 ---
 Part of my #100DaysOfSQL Challenge 🚀
+# SQL Day 17 - Aliases (AS) & SQL Execution Order
+
+## 📚 Topics Covered
+
+- Aliases (AS)
+- Column Aliases
+- Aggregate Function Aliases
+- Aliases with GROUP BY
+- Aliases with HAVING
+- SQL Logical Execution Order
+- Query Readability Best Practices
+
+## 💻 Workbench Practice
+
+Completed practice queries on:
+
+- Column aliases using AS
+- Aliases with COUNT(), AVG(), MAX(), and MIN()
+- GROUP BY with aliases
+- HAVING with aggregate functions
+- SQL execution order demonstration
+- Filtering, grouping, and ordering data together
+
+## 🎯 Mini Challenge
+
+Solved queries for:
+
+- Employee name as Employee and salary as Monthly_Pay
+- Average age as Average_Age
+- Female employee count as Female_Count
+- Department-wise total salary
+- Departments having more than one employee
+
+## 🎯 Learning Outcome
+
+After completing Day 17, I can:
+
+- Understand what SQL aliases are
+- Use the AS keyword to improve query readability
+- Assign aliases to columns and aggregate functions
+- Write cleaner and more professional SQL queries
+- Explain the logical execution order of SQL queries
+- Understand how SELECT, FROM, WHERE, GROUP BY, HAVING, and ORDER BY work together
+
+---
+Part of my #100DaysOfSQL Challenge 🚀
