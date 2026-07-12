@@ -41,4 +41,26 @@ FROM Office;
 
 -- Count unique genders
 SELECT COUNT(DISTINCT Gender) AS Total_Genders
+FROM Office; 
+
+-- Display all unique departments
+SELECT DISTINCT Department
 FROM Office;
+
+-- Display all unique genders
+SELECT DISTINCT Gender
+FROM Office;
+
+-- Display all unique ages in ascending order
+SELECT DISTINCT Age
+FROM Office
+ORDER BY Age ASC;
+
+-- Display the number of unique departments
+SELECT COUNT(DISTINCT Department) AS Total_Departments
+FROM Office;
+
+-- Display all unique departments where salary is greater than 40000
+SELECT DISTINCT Department
+FROM Office
+WHERE Salary > 40000;
