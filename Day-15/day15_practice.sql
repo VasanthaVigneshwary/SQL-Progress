@@ -105,27 +105,3 @@ FROM Office
 WHERE Gender = 'F'
 GROUP BY Department;
 
--- Count male employees in each department
-SELECT Department, COUNT(*) AS Male_Employees
-FROM Office
-WHERE Gender = 'M'
-GROUP BY Department;
-
--- Display the average salary of female employees in each department
-SELECT Department, AVG(Salary) AS Female_Average_Salary
-FROM Office
-WHERE Gender = 'F'
-GROUP BY Department;
-
--- Display the total salary of employees aged 20 in each department
-SELECT Department, SUM(Salary) AS Total_Salary
-FROM Office
-WHERE Age = 20
-GROUP BY Department;
-
--- Display only the department names using GROUP BY
-SELECT Department
-FROM Office
-GROUP BY Department;
-
-
