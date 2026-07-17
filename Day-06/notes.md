@@ -148,4 +148,3 @@ The SQL command categories are:
 - DCL
 - TCL
 
-Today's practical work focused on selecting and verifying the active database in MySQL Workbench.
