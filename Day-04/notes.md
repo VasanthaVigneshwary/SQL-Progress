@@ -83,20 +83,3 @@ Students ↔ Courses
 One student can enroll in many courses.
 One course can have many students.
 
-## Mini Challenge
-
-Orders Table
-
-OrderID | ProductID | CustomerID
-
-Possible Primary Key:
-OrderID
-
-Possible Foreign Keys:
-ProductID
-CustomerID
-
-Possible Composite Key:
-OrderID + ProductID
-
-This combination uniquely identifies products within an order.
