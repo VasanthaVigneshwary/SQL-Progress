@@ -1,12 +1,14 @@
+-- Day 6 - Introduction to SQL
+
+-- Show all databases
+SHOW DATABASES;
+
+-- Select the SQL_DB database
 USE SQL_DB;
-CREATE TABLE Office (
-Employee_ID INT PRIMARY KEY ,
-Employee_Name VARCHAR (100),
-Age INT ,
-Salary DECIMAL (10,2) ,
-Department varchar (50),
-Gender CHAR(1),
-Joining_Date DATE 
-) ;
-SHOW TABLES ;
-DESC Office ;
+
+-- Display the currently selected database
+SELECT DATABASE();
+
+-- Notes:
+-- SQL is used to communicate with databases.
+-- Today I practiced basic SQL commands in MySQL Workbench.
