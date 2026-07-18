@@ -16,7 +16,7 @@
 -- Software used to create and manage databases.
 
 -- RDBMS:
--- Relational Database Management System.
+-- Relational Database Management System
 -- Stores data in related tables.
 
 -- Examples of DBMS/RDBMS:
