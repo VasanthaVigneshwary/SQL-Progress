@@ -556,3 +556,30 @@ Today you'll learn another simple but very important SQL keyword that is used al
 
 ## ✅ Status
 Completed ✔️
+
+# Day 19 – LIKE Operator
+
+## 📌 Topics Covered
+- LIKE Operator
+- Wildcard Characters (`%` and `_`)
+- Pattern Matching
+- NOT LIKE
+- LIKE with WHERE
+- LIKE with ORDER BY
+- LIKE with LIMIT
+- Difference between `=` and `LIKE`
+
+## 🛠️ Concepts Learned
+- Search text using patterns.
+- Use `%` to match zero or more characters.
+- Use `_` to match exactly one character.
+- Exclude patterns using `NOT LIKE`.
+- Combine `LIKE` with `WHERE`, `ORDER BY`, and `LIMIT`.
+- Understand the difference between exact matching and pattern matching.
+
+## 📂 Files
+- day19_practice.sql
+- notes.md
+
+## ✅ Status
+Completed ✔️
