@@ -583,3 +583,35 @@ Completed ✔️
 
 ## ✅ Status
 Completed ✔️
+# SQL Day 20 – IN Operator
+
+## 📘 Topics Covered
+- IN Operator
+- NOT IN Operator
+- Replacing multiple OR conditions using IN
+- Using IN with Numbers
+- Using IN with Text Values
+- Using IN with Employee IDs
+- Combining IN with WHERE
+- Combining IN with AND
+- Combining IN with ORDER BY
+- SQL Execution Order with IN
+
+## 📚 Key Concepts
+- IN checks whether a value exists in a given list.
+- It is a shorter and cleaner alternative to multiple OR conditions.
+- NOT IN excludes values from a specified list.
+- IN can be used with numeric, text, and date values.
+- IN is always used with the WHERE clause.
+
+## 💻 Files
+- day20_practice.sql
+- notes.md
+
+## 🎯 Learning Outcome
+By the end of Day 20, I learned to:
+- Use the IN operator for filtering multiple values.
+- Replace multiple OR conditions using IN.
+- Exclude values using NOT IN.
+- Combine IN with WHERE, AND, and ORDER BY.
+- Write cleaner and more readable SQL queries.
