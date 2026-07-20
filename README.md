@@ -615,3 +615,35 @@ By the end of Day 20, I learned to:
 - Exclude values using NOT IN.
 - Combine IN with WHERE, AND, and ORDER BY.
 - Write cleaner and more readable SQL queries.
+# SQL Day 21 – BETWEEN Operator
+
+## 📘 Topics Covered
+- BETWEEN Operator
+- NOT BETWEEN Operator
+- BETWEEN with Numbers
+- BETWEEN with Dates
+- BETWEEN with Text Values
+- BETWEEN vs >= AND <=
+- BETWEEN vs IN
+- Combining BETWEEN with WHERE
+- Combining BETWEEN with ORDER BY
+- SQL Execution Order with BETWEEN
+
+## 📚 Key Concepts
+- BETWEEN retrieves values within a specified range.
+- BETWEEN is inclusive of both starting and ending values.
+- NOT BETWEEN excludes values within a range.
+- BETWEEN can be used with numbers, dates, and text values.
+- BETWEEN is equivalent to using >= and <= together.
+
+## 💻 Files
+- day21_practice.sql
+- notes.md
+
+## 🎯 Learning Outcome
+By the end of Day 21, I learned to:
+- Filter records using BETWEEN.
+- Exclude ranges using NOT BETWEEN.
+- Work with numeric and date ranges.
+- Understand the difference between BETWEEN and IN.
+- Combine BETWEEN with WHERE and ORDER BY.
