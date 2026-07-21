@@ -647,3 +647,38 @@ By the end of Day 21, I learned to:
 - Work with numeric and date ranges.
 - Understand the difference between BETWEEN and IN.
 - Combine BETWEEN with WHERE and ORDER BY.
+
+# 🚀 SQL Day 22 – NULL, IS NULL & IS NOT NULL
+
+## 📖 Topics Covered
+- What is NULL?
+- Difference between NULL, 0, and Empty String
+- IS NULL
+- IS NOT NULL
+- Why `=` cannot be used with NULL
+- COUNT(*) vs COUNT(column)
+- Aggregate Functions and NULL values
+- SQL Execution Order with IS NULL
+- Using NULL with WHERE, ORDER BY, AND
+- Updating and Restoring NULL values
+
+## 💻 Concepts Practiced
+- Finding NULL values
+- Finding non-NULL values
+- Counting NULL and non-NULL records
+- Combining IS NULL with AND
+- Ordering NULL results
+- Aggregate functions ignoring NULL values
+
+## 📂 Files
+- `day22_practice.sql`
+- `notes.md`
+
+## 🎯 Outcome
+After completing Day 22, I can:
+- Understand what NULL represents.
+- Differentiate NULL from 0 and empty strings.
+- Use `IS NULL` and `IS NOT NULL`.
+- Understand how aggregate functions treat NULL values.
+- Differentiate `COUNT(*)` and `COUNT(column)`.
+- Filter records containing missing values using SQL.
