@@ -715,36 +715,60 @@ After completing Day 23, I can:
 - Use NOT NULL, DEFAULT, and CHECK constraints.
 - Understand the purpose of FOREIGN KEY.
 - Predict errors caused by constraint violations.
-# 🚀 SQL Day 23 – SQL Constraints (Introduction)
+# 🚀 SQL Day 24 – ALTER TABLE
 
-## 📖 Topics Covered
-- Introduction to SQL Constraints
-- PRIMARY KEY
-- NOT NULL
-- UNIQUE
-- DEFAULT
-- CHECK
-- FOREIGN KEY (Introduction)
-- Difference between PRIMARY KEY and UNIQUE
-- Constraint Validation
-- Constraint Violations
+## 📌 Overview
+Day 24 focuses on the **ALTER TABLE** statement, a Data Definition Language (DDL) command used to modify the structure of an existing table without recreating it. It allows us to add, remove, modify, and rename columns or tables while preserving the existing data.
 
-## 💻 Concepts Practiced
-- Creating tables with constraints
-- Inserting valid records
-- Understanding constraint violations
-- Using DEFAULT values
-- Viewing table structure using DESC
+---
 
-## 📂 Files
-- `day23_practice.sql`
+## 📚 Topics Covered
+- ALTER TABLE
+- ADD COLUMN
+- DROP COLUMN
+- MODIFY COLUMN
+- RENAME COLUMN
+- RENAME TABLE
+- Adding Constraints
+- Removing Constraints (Introduction)
+
+---
+
+## 🛠️ SQL Concepts Practiced
+- Adding new columns to an existing table
+- Removing unnecessary columns
+- Modifying column datatypes
+- Renaming columns
+- Renaming tables
+- Viewing updated table structures using `DESC`
+
+---
+
+## 📂 Files Included
+- `day24_practice.sql`
 - `notes.md`
+- `README.md`
 
-## 🎯 Outcome
-After completing Day 23, I can:
-- Understand why SQL Constraints are used.
-- Create tables using different constraints.
-- Differentiate between PRIMARY KEY and UNIQUE.
-- Use NOT NULL, DEFAULT, and CHECK constraints.
-- Understand the purpose of FOREIGN KEY.
-- Predict errors caused by constraint violations.
+---
+
+## 🎯 Key Learning Outcomes
+- Understood the purpose of the `ALTER TABLE` statement.
+- Learned how to modify an existing table without deleting its data.
+- Practiced adding, deleting, modifying, and renaming columns.
+- Learned to rename existing tables.
+- Understood that `ALTER TABLE` changes only the table structure, not the stored records (except when dropping columns).
+
+---
+
+## 💡 Commands Learned
+- `ALTER TABLE ... ADD`
+- `ALTER TABLE ... DROP COLUMN`
+- `ALTER TABLE ... MODIFY COLUMN`
+- `ALTER TABLE ... RENAME COLUMN`
+- `ALTER TABLE ... RENAME TO`
+- `DESC`
+
+---
+
+## 🚀 Outcome
+Successfully practiced modifying table structures using various `ALTER TABLE` operations in MySQL Workbench.
