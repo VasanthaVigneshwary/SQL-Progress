@@ -1,33 +1,36 @@
-# 🚀 SQL Day 23 – SQL Constraints (Introduction)
+USE SQL_DB;
 
-## 📖 Topics Covered
-- Introduction to SQL Constraints
-- PRIMARY KEY
-- NOT NULL
-- UNIQUE
-- DEFAULT
-- CHECK
-- FOREIGN KEY (Introduction)
-- Difference between PRIMARY KEY and UNIQUE
-- Constraint Validation
-- Constraint Violations
+-- Display the current structure of the Office table
+DESC Office;
 
-## 💻 Concepts Practiced
-- Creating tables with constraints
-- Inserting valid records
-- Understanding constraint violations
-- Using DEFAULT values
-- Viewing table structure using DESC
+-- Add a new Email column to the Office table
+ALTER TABLE Office
+ADD Email VARCHAR(100);
 
-## 📂 Files
-- `day23_practice.sql`
-- `notes.md`
+-- View the updated table structure after adding the Email column
+DESC Office;
 
-## 🎯 Outcome
-After completing Day 23, I can:
-- Understand why SQL Constraints are used.
-- Create tables using different constraints.
-- Differentiate between PRIMARY KEY and UNIQUE.
-- Use NOT NULL, DEFAULT, and CHECK constraints.
-- Understand the purpose of FOREIGN KEY.
-- Predict errors caused by constraint violations.
+-- Increase the maximum length of the Employee_Name column to 150 characters
+ALTER TABLE Office
+MODIFY COLUMN Employee_Name VARCHAR(150);
+
+-- Rename the Salary column to Monthly_Salary
+ALTER TABLE Office
+RENAME COLUMN Salary TO Monthly_Salary;
+
+-- View the table structure after renaming the Salary column
+DESC Office;
+
+-- Rename Monthly_Salary back to Salary
+ALTER TABLE Office
+RENAME COLUMN Monthly_Salary TO Salary;
+
+-- Remove the Email column from the Office table
+ALTER TABLE Office
+DROP COLUMN Email;
+
+-- View the final structure of the Office table
+DESC Office;
+
+-- Display all records to verify that the data remains unchanged
+SELECT * FROM Office;

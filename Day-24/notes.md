@@ -1,199 +1,193 @@
-# 📝 SQL Day 23 Notes – SQL Constraints
+# SQL Day 24 – ALTER TABLE
 
-## What are SQL Constraints?
+## What is ALTER TABLE?
 
-Constraints are rules applied to table columns that ensure only valid and accurate data is stored in the database.
-
-They help maintain data integrity by preventing invalid data from being inserted, updated, or deleted.
+`ALTER TABLE` is a Data Definition Language (DDL) command used to modify the structure of an existing table without deleting and recreating it.
 
 ---
 
-# Why are Constraints Important?
+## Why do we use ALTER TABLE?
 
-Without constraints:
-- Duplicate IDs can be inserted.
-- Invalid ages or salaries can be stored.
-- Required fields may be left empty.
+Suppose a table is already created, but later we need to:
+- Add a new column
+- Delete an existing column
+- Change a column's datatype
+- Rename a column
+- Rename the table
 
-Constraints help avoid these problems.
-
----
-
-# Common SQL Constraints
-
-| Constraint | Purpose |
-|------------|---------|
-| PRIMARY KEY | Uniquely identifies each row |
-| NOT NULL | Prevents NULL values |
-| UNIQUE | Prevents duplicate values |
-| DEFAULT | Assigns a default value |
-| CHECK | Restricts values using a condition |
-| FOREIGN KEY | Maintains relationships between tables |
+Instead of creating a new table, we use **ALTER TABLE**.
 
 ---
 
-# PRIMARY KEY
-
-A PRIMARY KEY uniquely identifies every row in a table.
-
-Properties:
-- Cannot contain NULL values.
-- Cannot contain duplicate values.
-- Only one PRIMARY KEY per table.
-
-Example
+# Syntax
 
 ```sql
-Employee_ID INT PRIMARY KEY
+ALTER TABLE table_name
+operation;
 ```
 
 ---
 
-# NOT NULL
+# 1. ADD COLUMN
 
-Ensures that a column always contains a value.
+Adds a new column to an existing table.
 
-Example
+### Syntax
 
 ```sql
-Employee_Name VARCHAR(100) NOT NULL
+ALTER TABLE table_name
+ADD column_name datatype;
 ```
 
-Trying to insert NULL will produce an error.
-
----
-
-# UNIQUE
-
-Ensures all values in a column are unique.
-
-Example
+### Example
 
 ```sql
-Email VARCHAR(100) UNIQUE
+ALTER TABLE Office
+ADD Email VARCHAR(100);
 ```
 
-Duplicate values are not allowed.
-
-MySQL allows one NULL value in a UNIQUE column.
-
 ---
 
-# PRIMARY KEY vs UNIQUE
+# 2. DROP COLUMN
 
-| PRIMARY KEY | UNIQUE |
-|-------------|--------|
-| No duplicate values | No duplicate values |
-| NULL not allowed | One NULL allowed (MySQL) |
-| Only one per table | Multiple UNIQUE constraints allowed |
+Removes a column from the table.
 
----
-
-# DEFAULT
-
-Assigns a default value when no value is provided.
-
-Example
+### Syntax
 
 ```sql
-Department VARCHAR(20) DEFAULT 'IT'
+ALTER TABLE table_name
+DROP COLUMN column_name;
 ```
 
-If Department is omitted during insertion, SQL automatically stores 'IT'.
-
----
-
-# CHECK
-
-Restricts values based on a condition.
-
-Example
+### Example
 
 ```sql
-Age INT CHECK (Age >= 18)
+ALTER TABLE Office
+DROP COLUMN Email;
 ```
 
-Values below 18 are rejected.
+> Dropping a column permanently deletes all data stored in that column.
 
 ---
 
-# FOREIGN KEY
+# 3. MODIFY COLUMN
 
-A FOREIGN KEY creates a relationship between two tables.
+Changes the datatype or size of an existing column.
 
-Example
+### Syntax
 
 ```sql
-Department_ID INT,
-FOREIGN KEY (Department_ID)
-REFERENCES Department(Department_ID)
+ALTER TABLE table_name
+MODIFY COLUMN column_name new_datatype;
 ```
 
-It ensures valid references between related tables.
+### Example
 
----
-
-# Constraint Checking
-
-Whenever data is inserted or updated:
-
-```
-INSERT / UPDATE
-
-↓
-
-Constraint Check
-
-↓
-
-Data Stored (if valid)
-
-OR
-
-Error Returned (if invalid)
+```sql
+ALTER TABLE Office
+MODIFY COLUMN Employee_Name VARCHAR(150);
 ```
 
 ---
 
-# Difference Between NOT NULL and DEFAULT
+# 4. RENAME COLUMN
 
-NOT NULL
-- Value is mandatory.
+Changes the name of a column.
 
-DEFAULT
-- SQL automatically inserts a predefined value if no value is supplied.
+### Syntax
 
----
+```sql
+ALTER TABLE table_name
+RENAME COLUMN old_name TO new_name;
+```
 
-# Important Points
+### Example
 
-- Constraints improve data integrity.
-- PRIMARY KEY uniquely identifies rows.
-- NOT NULL prevents missing values.
-- UNIQUE prevents duplicates.
-- DEFAULT inserts automatic values.
-- CHECK validates conditions.
-- FOREIGN KEY maintains relationships.
+```sql
+ALTER TABLE Office
+RENAME COLUMN Salary TO Monthly_Salary;
+```
 
 ---
 
-# Real-Life Uses
+# 5. RENAME TABLE
 
-- Employee IDs should be unique.
-- Student names should not be NULL.
-- Email addresses should be unique.
-- Age should satisfy minimum requirements.
-- Default department for new employees.
-- Linking employees with departments.
+Changes the name of an existing table.
+
+### Syntax
+
+```sql
+ALTER TABLE old_table_name
+RENAME TO new_table_name;
+```
+
+### Example
+
+```sql
+ALTER TABLE Office
+RENAME TO Employees;
+```
 
 ---
 
-# Summary
+# 6. ADD Constraint
 
-- Constraints maintain accurate and reliable data.
-- PRIMARY KEY = Unique + NOT NULL.
-- UNIQUE prevents duplicate values.
-- NOT NULL requires a value.
-- DEFAULT inserts automatic values.
-- CHECK validates data before insertion.
-- FOREIGN KEY links related tables.
+Adds a constraint to an existing table.
+
+### Example
+
+```sql
+ALTER TABLE Office
+ADD UNIQUE (Email);
+```
+
+---
+
+# 7. DROP Constraint (Introduction)
+
+Removes an existing constraint.
+
+### Example
+
+```sql
+ALTER TABLE Office
+DROP INDEX Email;
+```
+
+---
+
+# ALTER TABLE vs CREATE TABLE
+
+| CREATE TABLE | ALTER TABLE |
+|--------------|-------------|
+| Creates a new table | Modifies an existing table |
+| Used once | Can be used multiple times |
+| Creates structure | Changes existing structure |
+
+---
+
+# Key Points
+
+- ALTER TABLE modifies only the table structure.
+- Existing records remain safe.
+- Dropping a column permanently removes its data.
+- Multiple ALTER TABLE operations can be performed on the same table.
+- DESC is used to verify the updated table structure.
+
+---
+
+# Commands Learned
+
+- ADD COLUMN
+- DROP COLUMN
+- MODIFY COLUMN
+- RENAME COLUMN
+- RENAME TABLE
+- ADD UNIQUE
+- DESC
+
+---
+
+# Day 24 Summary
+
+Today I learned how to modify existing database tables using the ALTER TABLE statement. I practiced adding, deleting, modifying, and renaming columns and tables while understanding that ALTER TABLE changes the table structure without affecting existing records.
