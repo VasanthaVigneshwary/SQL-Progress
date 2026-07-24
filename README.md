@@ -772,3 +772,28 @@ Day 24 focuses on the **ALTER TABLE** statement, a Data Definition Language (DDL
 
 ## 🚀 Outcome
 Successfully practiced modifying table structures using various `ALTER TABLE` operations in MySQL Workbench.
+# 🚀 SQL Day 25 – UPDATE Statement
+
+## 📚 Topic
+UPDATE Statement
+
+## 📖 What I Learned
+- Learned how to modify existing records using the `UPDATE` statement.
+- Updated single and multiple columns in a table.
+- Understood the importance of the `WHERE` clause while updating records.
+- Performed arithmetic operations using `UPDATE`.
+- Learned the difference between `INSERT` and `UPDATE`.
+
+## 🛠️ Commands Practiced
+- UPDATE
+- SET
+- WHERE
+- SELECT
+- CREATE TABLE AS SELECT
+
+## 📂 Files
+- day25_practice.sql
+- notes.md
+
+## 🎯 Outcome
+Learned how to safely update existing records in a table using the `UPDATE` statement while avoiding accidental updates to all rows.
